@@ -6,7 +6,7 @@ import { io } from 'socket.io-client'
 export function Chat() {
     const [messages, setMessages] = useState([])
     
-    const socket = io('http://localhost:4000', {
+    const socket = io('https://chat-geovas.vercel.app/', {
         auth: {
             serverOffset: 0
         }
