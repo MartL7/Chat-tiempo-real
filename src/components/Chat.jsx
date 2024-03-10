@@ -22,10 +22,6 @@ export function Chat() {
             });
         })
 
-        return () => {
-            socket.disconnect()
-        }
-
     }, [])
     
     const renderMessages = () => {

@@ -75,9 +75,9 @@ io.on('connection', async (socket) =>  {
 app.use(logger('dev')) // Loggear las peticiones a nivel desarrollo
 
 const port = process.env.PORT ?? 3000
-/* 
+
 app.get('/', (req, res) => {
-    res.sendFile(process.cwd() + '/client/index.html') // Servir el html
-}) */
+    res.send('Hola bebecito')
+}) 
 
 server.listen(port, () => console.log(`Server is running on port ${port}`))
